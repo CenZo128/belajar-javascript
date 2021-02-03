@@ -42,5 +42,22 @@
   * */ 
  
  /**
+  * 4. Cek Bilangan Prima
   * 
-  *  */ 
+  * Definisi bilangan Prima : bilangan yang hanya memiliki 2 faktor, 1 dan bilangan itu sendiri
+  *  
+  * Input = 7 // 1
+  * 
+  * Input = 15 // -1
+  * */ 
+
+/**
+ * 5. Hitung nilai rata-rata atau Mean dari angka 10 - 30
+ * 
+ * Proses -> (10 + 11 + 12 + ... + 29 + 30) / 20
+ * Result = 19.50
+ * 
+ * untuk membuat jadi 2 angka di belakangan koma dapat menggunakan .toFixed(2)
+ */
+
+ 
