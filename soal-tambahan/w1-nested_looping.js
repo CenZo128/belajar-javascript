@@ -17,5 +17,13 @@ Input : 8 (genap)
  */
 
  /**
+  * Faktor Persekutuan Terbesar
   * 
+  * 12 | 16 -> 4
+  * 10 | 15 -> 5
+  * 
+  * let input1 = 35
+  * let input2 = 14
+  * 
+  * result = 7
   */
