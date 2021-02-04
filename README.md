@@ -6,10 +6,15 @@
 
 Halo nama saya vincent buddy kalian. Salam kenal ya.  
 
+___
 
 ## RANGKUMAN
 
+- [Rangkuman]()
+
 ## SOAL TAMBAHAN
+
+- [Soal Tambahan]()
 
 ## Link Referensi
 
