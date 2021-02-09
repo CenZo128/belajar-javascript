@@ -22,41 +22,7 @@
  */
 
 function findTheY(linearEquation, xValue) {
-    let num = []
-    let temp = [];
-    let tempString = '';
-    let total = 0;
-    let numString = ''
-    for (let i = 0; i < linearEquation.length; i++) {
-
-        if (linearEquation[i] === '+') {
-            num.push(numString);
-            numString = '';
-        } else {
-                numString += linearEquation[i]
-            if (i === linearEquation.length - 1) {
-                num.push(numString);
-                numString = '';
-
-            }
-        }
-    }
-    for(let i=0;i<num.length;i++){
-        let outerLoop = num[i]
-        for(let j=0;j<outerLoop.length;j++){
-            if (outerLoop[j] === 'x') {
-                total += +Number(tempString)*xValue ;
-                tempString = '';
-            } else {
-                tempString += outerLoop[j];
-                if (j === outerLoop.length - 1) {
-                    total += +Number(tempString)*1 ;
-                    tempString = '';
-                }
-            }
-        }
-    }
-    return total;
+     
 }
 
 
