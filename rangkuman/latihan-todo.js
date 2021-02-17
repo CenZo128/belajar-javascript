@@ -90,7 +90,7 @@ function deleteTodo(id) {
             temp.push(todos[i])
         }
     }
-    todos = temp
+    todos = temp 
     console.log(`Id no ${id} telah di hapus!`)
 }
 

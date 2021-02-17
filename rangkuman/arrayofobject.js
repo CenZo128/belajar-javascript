@@ -1,5 +1,13 @@
 // Array of objects
 
+// Destructuring Array
+let items = ["Laptop",1500000,true]
+
+let [name,price,isSold] = items
+console.log(name)
+console.log(price)
+console.log(isSold)
+
 
 
 // students[2].isGraduate = false
