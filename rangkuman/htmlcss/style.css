@@ -1,0 +1,43 @@
+/*
+Selector {
+    property : value;
+}
+*/
+
+body {
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header h1.text-header-1 {
+    color : red;
+}
+
+.header h1.text-header-2 {
+    color : green;
+}
+
+.header {
+    width: 600px;
+    background-color:lightcyan;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu {
+    width: 600px;
+    height: 50px;
+    background-color:moccasin;
+    margin: auto;
+    padding: 15px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    float: left;
+    margin-right : 10px;
+    line-height: 50px;
+}
