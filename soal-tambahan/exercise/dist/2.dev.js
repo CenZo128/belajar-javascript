@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * ===============
  * Absence Report
@@ -25,17 +27,9 @@
   * Notes:
  * - Dilarang menggunakan built in function apapun
  */
-function absenceReport(data) {
+function absenceReport(data) {}
 
-}
-
-
-console.log(absenceReport([
-    ['Week1', 'V', 'V', "I", "V", "A"],
-    ['Week2', 'V', 'A', "I", "V", "V"],
-    ['Week3', 'V', 'I', "V", "V", "I"],
-    ['Week4', 'V', 'V', "I", "V", "V"],
-]));
+console.log(absenceReport([['Week1', 'V', 'V', "I", "V", "A"], ['Week2', 'V', 'A', "I", "V", "V"], ['Week3', 'V', 'I', "V", "V", "I"], ['Week4', 'V', 'V', "I", "V", "V"]]));
 /*
 {
   Week1: { Hadir: 3, Izin: 1, Absen: 1 },
@@ -45,11 +39,7 @@ console.log(absenceReport([
 }
 */
 
-
-console.log(absenceReport([
-    ['Week1', 'V', 'I', "I", "V", "A"],
-    ['Week2', 'A', 'A', "I", "V", "V"]
-]));
+console.log(absenceReport([['Week1', 'V', 'I', "I", "V", "A"], ['Week2', 'A', 'A', "I", "V", "V"]]));
 /*
 {
   Week1: { Hadir: 2, Izin: 2, Absen: 1 },
@@ -57,5 +47,4 @@ console.log(absenceReport([
 }
 */
 
-
-module.exports = absenceReport
+module.exports = absenceReport;

@@ -1,10 +1,19 @@
-/**
- * INCOME & EXPENSE TRACKER
- * 
- * SMMARY
- * =========
- * 
- */
+/*  
+   INCOME & EXPENSE TRACKER
+   
+   SMMARY
+   =========
+   Buatlah sebuah income and expense tracker yang dapat mengatur list pengeluaran dan pemasukan.
+   
+   TASKS
+   =========
+   Aplikasikan modular function untuk membuat aplikasi tersebut. Berikut rincian :
+   
+   function getTracks()
+   - mengambil variable tracsk lalu menghasilkan output seperti berikut :
+ 
+   
+  */
 
  const tracks = {
      expense : {
@@ -39,6 +48,12 @@
     },
  }
 
- function getTrac(){
-     
+ function getTrackers(){
+     // code here
  }
+ function addTracks(type,name,price){
+    // code here
+}
+function deleteTracks(){
+    // code here
+}
