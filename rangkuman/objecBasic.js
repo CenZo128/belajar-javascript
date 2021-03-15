@@ -35,3 +35,31 @@ for(let i = 0 ; i < keys.length; i++){
 }
 // console.log(number)
 
+const string = 'abcagadefbbfacedaagbax';
+let result = {}
+
+// for(let i = 0 ; i < string.length; i++){
+//     // console.log(string[i])
+//     // Normal
+//     // if(result[string[i]] === undefined){
+//     //     result[string[i]] = 1;
+//     // }else {
+//     //     result[string[i]] += 1;
+//     // }
+
+//     // Ternary
+//     !result[string[i]] ? result[string[i]] = 1 : result[string[i]]++;
+// }
+
+console.log(result)
+// for(let i in result){
+//     console.log(result[i])
+// }
+
+let obj = {
+    title : "title",
+    
+    getTitle : function(){
+        console.log(this.title)
+    }
+}
