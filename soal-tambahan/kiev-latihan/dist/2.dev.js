@@ -34,7 +34,30 @@
 // Afifah dan Bayu
 // Juminten dan Iqbal
 // Junaedi dan Marimar
-function pairProject(arr) {// code here
+function pairProject(arr) {
+  // code here
+  var result = [];
+
+  if (names.length % 2 === 1) {
+    return "Students total should be even";
+  } else {
+    for (var i = 0; i < names.length; i++) {
+      if (names[i]) {
+        for (var j = i + 1; j < names.length; j++) {
+          if (names[j]) {
+            if (names[i][0] !== names[j][0]) {
+              result.push("".concat(names[i], " dan ").concat(names[j]));
+              names[i] = false;
+              names[j] = false;
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return result;
 }
 
 console.log(pairProject(["Acong", "Afifah", "Charlie", "Samuel", "Daniel", "Wika", "Wiwin", "Mimin", "Rindu", "Semmi"])); // [

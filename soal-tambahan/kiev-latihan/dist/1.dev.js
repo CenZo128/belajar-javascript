@@ -1,3 +1,5 @@
+"use strict";
+
 /**
  * ==============
  * Find the value of Y
@@ -20,4 +22,58 @@
  * Output
  * 7
  */
-"use strict";
+function findTheY(linearEquation, xValue) {
+  var num = [];
+  var temp = [];
+  var tempString = '';
+  var total = 0;
+  var numString = '';
+
+  for (var i = 0; i < linearEquation.length; i++) {
+    if (linearEquation[i] === '+') {
+      num.push(numString);
+      numString = '';
+    } else {
+      numString += linearEquation[i];
+
+      if (i === linearEquation.length - 1) {
+        num.push(numString);
+        numString = '';
+      }
+    }
+  }
+
+  for (var _i = 0; _i < num.length; _i++) {
+    var outerLoop = num[_i];
+
+    for (var j = 0; j < outerLoop.length; j++) {
+      if (outerLoop[j] === 'x') {
+        total += Number(tempString) * xValue;
+        tempString = '';
+      } else {
+        tempString += outerLoop[j];
+
+        if (j === outerLoop.length - 1) {
+          total += Number(tempString) * 1;
+          tempString = '';
+        }
+      }
+    }
+  }
+
+  return total;
+}
+
+console.log(findTheY('2x+3', 2)); // 7
+
+console.log(findTheY('2x+3x', 3)); // 15
+
+console.log(findTheY('3x', 5)); // 15
+
+console.log(findTheY('3x+7x+10x', 2)); // 40
+
+console.log(findTheY('3x+18+100x', 7)); // 739
+
+console.log(findTheY('5+30+100x+25x+3', 1)); // 163
+
+console.log(findTheY('1000x', 7)); // 7000
